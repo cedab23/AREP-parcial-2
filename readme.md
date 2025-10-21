@@ -54,6 +54,26 @@ mvn install
 
 con esto presente, procedemos a subirlas al curso de AWS, en donde se manejaron las siguientes instancias:
 
-![instance1]()
-![instance2]()
-![proxy]() 
+![instance1](images/instance1.png)
+![instance2](images/instance2.png)
+![instances](images/instances.png)
+
+ahora procedemos a entrar a ambas distancias mediante ssh
+
+![access](images/access.png)
+
+y ahora con el acceso en ambas instancias,procedemos a instalar amazon coretto en ambas, puesto que no
+poseemos actualmente imagenes en docker, por lo que necesitamos crear una maquina virtual de java que
+contenga nuestras instancias.
+
+#### amazon coretto
+
+ahora para la instalacion de amazon coretto vamos a aprovechar la guia administrada por ammazon (y que hace
+parte de las pagnas web autorizadas en el parcial) para tener una guia sobre que comandos son necesarios
+para la instalación. Asimismo se manejara la version **17** para estar acorde a nuestra version de java
+
+![coretto](images/coretto.png) 
+
+ya con esto presente, podremos empezar a subir nuestro proyecto de java en estas instancias donde seran 
+alojadas para uso del proxy, el cual sera nuestro principal medio de comunicación entre el usuario y los
+metodos a realizar.
