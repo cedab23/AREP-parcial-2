@@ -39,4 +39,21 @@ su funcionamiento.
 ### instancias
 
 antes que nada hay que verificar que todo este compilando, esto se puede realizar de 2 formas, la primera siendo
-mediante algun ide, eligiendo el archivo *MathServicesApplication* y la opcion de ** 
+mediante algun ide, eligiendo el archivo *MathServicesApplication* y la opcion de *run File*
+
+![ide](images/IDEsuccess.png)
+
+la segunda vendria siendo mediante una terminal abierta en el archivo, y de ahi ejecutar el comando
+
+```
+mvn install
+```
+![cmd](images/CMDsuccess.png)
+
+#### AWS
+
+con esto presente, procedemos a subirlas al curso de AWS, en donde se manejaron las siguientes instancias:
+
+![instance1]()
+![instance2]()
+![proxy]() 
