@@ -1,1 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Math form</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<h1>Prime & Factor Form</h1>
+<form action="/math">
+<label for="number">Number:</label><br>
+<input type="number" id="number" name="number" value="0"><br><br>
+<input type="button" value="factor" onclick="loadFactor()"><br>
+<input type="button" value="prime" onclick="loadPrime()">
 
+</form>
+<div id="getrespmsg"></div>
+<script>
+function loadFactor() {
+let numberVar = document.getElementById("number").value;
+const xhttp = new XMLHttpRequest();
+xhttp.onload = function() {
+document.getElementById("getrespmsg").innerHTML =
+this.responseText;
+}
+xhttp.open("GET", "/factor?number="+numberVar);
+xhttp.send();
+}
+</script>
+
+<script>
+function loadPrime() {
+let numberVar = document.getElementById("number").value;
+const xhttp = new XMLHttpRequest();
+xhttp.onload = function() {
+document.getElementById("getrespmsg").innerHTML =
+this.responseText;
+}
+xhttp.open("GET", "/prime?number="+numberVar);
+xhttp.send();
+}
+</script>
+</body>
+</html>
